@@ -17,5 +17,5 @@ WORKDIR /root/riscv-gnu-toolchain
 RUN git submodule init binutils gcc gdb glibc newlib qemu spike && \
     git submodule update --recursive --progress --depth=1 -j 7
 
-RUN ./configure --prefix=$PREFIX
+RUN ./configure --prefix=$PREFIX --enable-multilib --enable-libsanitizer --enable-qemu-system --with-cmodel=medany
 RUN make -j$(nproc)
