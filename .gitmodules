@@ -1,4 +1,5 @@
 [submodule "riscv-gnu-toolchain"]
 	path = riscv-gnu-toolchain
-	url = https://github.com/riscv-collab/riscv-gnu-toolchain.git
+	url = https://github.com/tienntr/riscv-gnu-toolchain.git
+	branch = noble
 	shallow = true
